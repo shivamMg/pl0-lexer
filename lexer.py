@@ -22,7 +22,7 @@ class PL0Lexer(RegexLexer):
             (words(('call', 'begin', 'end', 'if', 'then', 'while', 'do',
                     'odd'), suffix=r'\b'), Keyword),
             (r'[.,;()]', Punctuation),
-            (r'(:=|=|#|<|<=|>|>=|[+\-*/]|[!?])', Operator),
+            (r'(:=|#|<=|>=|<|>|=|[+\-*/]|[!?])', Operator),
             (r'(0|[1-9]\d*)', Number),
             (r'[^\W\d]\w*', Name.Identifier),
         ]
